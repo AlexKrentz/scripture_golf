@@ -1,0 +1,90 @@
+.score {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+
+  padding: 15px;
+  line-height: 100%;
+
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.take-points-fade {
+  height: 2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 2.6rem;
+  color: red;
+  margin: 0;
+  left: 50%;
+  top: 7%;
+  position: absolute;
+  animation: fade 1.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.add-points-fade {
+  height: 3rem;
+  font-family: "Lato", sans-serif;
+  font-size: 2.6rem;
+  color: green;
+  margin: 0;
+  left: 50%;
+  top: 7%;
+  position: absolute;
+  animation: fade 1.5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0%, 100% {opacity: 0}
+  50% {opacity: 1}
+  100% {transform: translatex(45px) translatey(-45px)}
+}
+
+
+.score-header {
+  width: 100%;
+  height: 2rem;
+  background-color: #38015c;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+@media only screen and (max-height: 500px) {
+	.take-points-fade{
+		top: 12% !important;
+	}
+	.add-points-fade{
+		top: 12% !important;
+	}
+}
+@media only screen and (min-height: 900px) {
+	.take-points-fade{
+		top: 5%;
+	}
+	.add-points-fade{
+		top: 5%;
+	}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

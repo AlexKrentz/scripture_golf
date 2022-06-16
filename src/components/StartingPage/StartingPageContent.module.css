@@ -1,0 +1,30 @@
+.starting {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.starting h1 {
+  font-size: 5rem;
+  color:white;
+}
+
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  border: 10px solid #000000;
+}
+
+.pp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 510px;
+  font-size:xx-large;
+  border-color: #000000;
+}
+
+body {
+  background-size: cover;
+}
